@@ -44,7 +44,7 @@ botaoProcura.addEventListener('click', async (event) => {
     const sumir = document.getElementById('pokemons');
     sumir.remove();
     const digitado = document.querySelector('.procurarPokemon');
-    const input = digitado.value;
+    const input = digitado.value.toLowerCase();
 
     const { sprites: { front_default: imgURL } } = await fetchPokemon(input);
     createElement('ul', "", "papai", 'divPokemons', 'pokemons');
