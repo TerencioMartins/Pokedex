@@ -1,0 +1,105 @@
+@import 'animate.css';
+.buttonPokedex {
+    margin-left: 43%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.pokemonClass {
+    display: inline-block;
+}
+.pokemonSprites {
+    display:flex;
+    margin: 0 auto;
+    padding-top: 20%;
+}
+
+body{
+    background-color: rgb(29, 29, 29);
+    color:white
+}
+
+.pokemonClass {
+    width: 200px;
+    height: 250px;
+    border-radius: 30px;
+    background: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    margin: 10px;
+   }
+.pokemons2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pokemons2:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(29, 29, 29, 0.4);
+    color: rgb(24, 24, 24);
+    transform: translateY(-7px);
+   }
+.divPokemons{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+}
+body {
+    min-height: 50vw;
+    background-color:rgb(32, 32, 32);
+    background-image: linear-gradient(-45deg, #242424, #141414, #1d1e1f, #2b2b2c);
+    background-attachment: fixed;
+    /* background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh; */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #242424;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+   
+   button:hover {
+    background-color: #eeeeee;
+    box-shadow: 0px 15px 20px rgba(236, 236, 236, 0.4);
+    color: rgb(31, 31, 31);
+    transform: translateY(-7px);
+   }
+   
+   button:active {
+    transform: translateY(-1px);
+   }
+   .procurarPokemon{
+       display:inline-block;
+       margin: 0 auto;
+       margin-left: 40%;
+       border: none;
+       border-bottom:2px solid white;
+       border-radius: 50px;
+       width: 210px;
+       height: 45px;
+   }
