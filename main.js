@@ -45,17 +45,24 @@ botaoProcura.addEventListener('click', async (event) => {
     sumir.remove();
     const digitado = document.querySelector('.procurarPokemon');
     const input = digitado.value.toLowerCase();
+    console.log(digitado);
+    switch (input.length > 2) {
+        case false:
+            console.log("recarregou");
+            location.reload();
 
-    const { sprites: { front_default: imgURL } } = await fetchPokemon(input);
-    createElement('ul', "", "papai", 'divPokemons', 'pokemons');
-    createElement('li', "", 'pokemons', 'pokemonClass animate__animated animate__fadeIn', input);
-    createElement('button', input, input, 'pokemons2', 'pokemon' + input);
-    createSprite('img', `${imgURL}`, input, 'pokemonSprites', `Sprite` + input);
+        case true:
+            const { sprites: { front_default: imgURL } } = await fetchPokemon(input);
+            createElement('ul', "", "papai", 'divPokemons', 'pokemons');
+            createElement('li', "", 'pokemons', 'pokemonClass animate__animated animate__fadeIn', input);
+            createElement('button', input, input, 'pokemons2', 'pokemon' + input);
+            createSprite('img', `${imgURL}`, input, 'pokemonSprites', `Sprite` + input);
+    }
 
-    console.log(input);
+    
 })
 const botaoReload = document.querySelector('.buttonPokedex')
-botaoReload.addEventListener('click', ()=> {
+botaoReload.addEventListener('click', () => {
     location.reload()
 })
 
