@@ -61,10 +61,10 @@ botaoProcura.addEventListener('click', async (event) => {
 
     
 })
-const botaoReload = document.querySelector('.buttonPokedex')
-botaoReload.addEventListener('click', () => {
-    location.reload()
-})
+// const botaoReload = document.querySelector('.buttonPokedex')
+// botaoReload.addEventListener('click', () => {
+//     location.reload()
+// })
 const botaoSubir = document.querySelector('.botaoSubir2')
 botaoSubir.addEventListener('click', () => {
     window.scrollTo(0, 0);
